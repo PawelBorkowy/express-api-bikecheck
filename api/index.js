@@ -11,6 +11,7 @@ app.use(
     })
 );
 
+// Endpoints from queries.js handling
 app.get('/conway', db.getBikecheck);
 app.get('/conway/:part', db.getPart);
 app.post('/conway', db.postNewPart);
