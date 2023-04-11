@@ -16,11 +16,11 @@ app.use(
 app.post('/login', login);
     
 // Endpoints from queries.js handling
-app.get('/conway', db.getBikecheck);
-app.get('/conway/:part', db.getPart);
-app.post('/conway', authorize, db.postNewPart);
-app.put('/conway/:id', authorize, db.updatePart);
-app.delete('/conway/:id', authorize, db.deletePart);
+app.get('/bike', db.getBikecheck);
+app.get('/bike/:part', db.getPart);
+app.post('/bike', authorize, db.postNewPart);
+app.put('/bike/:id', authorize, db.updatePart);
+app.delete('/bike/:id', authorize, db.deletePart);
 
 app.listen(3000, () => {
     console.log('Server started on port 3000');
