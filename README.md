@@ -25,7 +25,7 @@ Bikecheck API is a simple express API to add, modify and list bikecheck of your 
 ## Usage
 * Run the application.
   ```
-  node api/index.js
+  npm start
   ```
 * Connect to the API using Postman.
   ```
