@@ -6,7 +6,10 @@ Bikecheck API is a simple express API to add, modify and list bikecheck of your 
 * Public (non-authenticated) users can access only GET requests.
 * Authenticated user can access all endpoints as well as create a new parts, edit created parts and also delete created parts.
 ## Installation Guide
-* Clone this repository [here](https://github.com/PawelBorkowy/express-api-bikecheck.git).
+* Clone this repository 
+  ```
+  git clone https://github.com/PawelBorkowy/express-api-bikecheck.git
+  ```
 * Run npm install to install all dependencies
   ```
   npm i
