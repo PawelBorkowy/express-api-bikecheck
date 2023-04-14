@@ -24,7 +24,7 @@ const getPart = (req, res) => {
             res.status(500).send('Error getting bike part');
             return;
         }
-        res.send(results.rows);
+        res.status(200).json(results.rows);
     });
 };
 
@@ -38,7 +38,7 @@ const getBikecheck = (req, res) => {
             res.status(500).send('Error getting bike bikecheck');
             return;
         }
-        res.send(results.rows);
+        res.status(200).json(results.rows);
     });
 };
 
@@ -53,7 +53,7 @@ const postNewPart = (req, res) => {
             res.status(500).send('Error adding bike part');
             return;
         }
-        res.send(results.rows);
+        res.status(201).json({ message: 'New part added successfully.'});
     });
 };
 
@@ -70,7 +70,7 @@ const updatePart = (req, res) => {
         return;
       }
   
-      res.send(results.rows);
+      res.status(201).json({ message: 'Part updated successfully.'});
     });
 };
 
@@ -86,7 +86,7 @@ const deletePart = (req, res) => {
         return;
       }
   
-      res.send(results.rows);
+      res.status(200).json({ message: 'Part deleted successfully.'});
     });
 };
 
